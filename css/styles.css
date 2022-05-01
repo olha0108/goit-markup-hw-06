@@ -37,6 +37,7 @@ input {
   width: 448px;
   padding-left: 30px;
   box-sizing: border-box;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-feedback {
   border: 1px solid var(--dark-color);
@@ -54,7 +55,6 @@ textarea:focus,
 .form-input:focus {
   border-color: var(--accent-color);
   opacity: 1;
-  fill: var(--accent-color);
 }
 
 label {
@@ -394,7 +394,7 @@ textarea {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social {
@@ -449,6 +449,7 @@ textarea {
   align-content: center;
   max-width: 106px;
   max-height: 60px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover,
 .client-link:focus {
@@ -619,8 +620,10 @@ img {
   color: #fff;
 }
 
-.portfol-item:hover .overlay-portfol,
-.portfol-item:focus .overlay-portfol {
+.portfol-item:hover .overlay-portfol {
+  transform: translatey(0);
+}
+.portfol-link:focus .overlay-portfol {
   transform: translatey(0);
 }
 
@@ -693,6 +696,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-header {
@@ -714,6 +718,7 @@ img {
 .form-field {
   position: relative;
 }
+
 .form-icon:hover {
   fill: var(--accent-color);
 }
@@ -726,6 +731,7 @@ img {
   height: 15px;
   width: 15px;
   fill: var(--dark-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-icon-checkbox {
@@ -739,7 +745,6 @@ img {
   display: flex;
   position: relative;
   justify-content: center;
-  background-position: center;
 }
 .link-zgoda {
   color: var(--accent-color);
@@ -762,6 +767,10 @@ img {
 }
 
 .input-checkbox:checked + .icon-checkbox {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.form-field-checkbox:checked + .icon-checkbox {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
