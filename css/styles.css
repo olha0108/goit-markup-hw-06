@@ -798,4 +798,7 @@ img {
   width: 24px;
   height: 24px;margin-left: 10px;
 }
-.btn-subscription{margin-left: 12px;height: 50px;display: flex;padding: 10px 29px;}
+.btn-subscription{height: 50px;display: flex;padding: 10px 29px;}
+.button-subscription {
+  display: flex;margin-left: 12px;align-self: center;padding-top: 30px;margin-bottom: 17px;
+}
