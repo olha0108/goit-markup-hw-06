@@ -734,7 +734,9 @@ img {
 
 
 
-.form-field-checkbox {position: relative;
+.form-field-checkbox {display: flex;
+  position: relative;
+  justify-content: center;
 }
 .link-zgoda {
   color: var(--accent-color);
@@ -745,5 +747,16 @@ img {
   display: flex;
 }
 .text-zgoda {
-  padding-left: 37px;
+  padding-left: 7px;
 }
+.icon-checkbox{display: inline-block;
+width: 15px;
+height: 15px;
+border-radius: 4px;
+border: 1px solid var(--dark-color);}
+
+.input-checkbox:checked + .icon-checkbox {background-color: var(--accent-color);
+background-image: url(/images/svg/form-check-box.svg);
+background-size: center;
+background-origin: border-box;
+border-color: var(--accent-color);}
