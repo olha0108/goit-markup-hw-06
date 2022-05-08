@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Olha V.</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
@@ -61,30 +61,30 @@
       </section>
                       <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
-                          <button type="button" class="button-close" data-modal-close><svg class="icon-svg">
+                          <button type="button" class="button-close" data-modal-close><svg class="icon-svg-close">
                             <use href="./images/symbol-defs.svg#icon-vector"></use>
                           </svg></button>
                           <div class="modal-form">
-                         <h3 class="form-header">Оставьте свои данные, мы вам перезвоним</h3>
+                         <p class="form-header">Оставьте свои данные, мы вам перезвоним</p>
 
 
 
                           <form>
                             
                             <label for="user_name" class="form-label">Имя<div class="form-field">
-                              <input type="text" name="username" id="user_name" class="form-input" /><svg class="form-icon">
+                              <input type="text" name="username" id="user_name" class="form-input" /><svg class="form-icon" width="12" height="12">
                                 <use href="./images/symbol-defs.svg#icon-form-mail"></use></svg></div>
                             </label>
 
                             <label for="phone" class="form-label">Телефон<div class="form-field">
-                              <input type="tel" name="phone" id="phone" class="form-input" maxlength="14" /><svg class="form-icon">
+                              <input type="tel" name="phone" id="phone" class="form-input" maxlength="14" /><svg class="form-icon" width="13" height="13">
                                 <use href="./images/symbol-defs.svg#icon-form-tel"></use>
                               </svg></div>
                             </label>
 
                           
                               <label for="user_email" class="form-label">Почта<div class="form-field">
-                                <input type="email" name="email" id="user_email" class="form-input" /><svg class="form-icon">
+                                <input type="email" name="email" id="user_email" class="form-input" /><svg class="form-icon" width="15" height="12">
                                   <use href="./images/symbol-defs.svg#icon-form-name"></use>
                                 </svg></div>
                               </label>
@@ -94,18 +94,19 @@
                               </label>
 
                               <div class="form-field-checkbox">
-                                <input type="checkbox" name="checkbox" id="checkbox" class="input-checkbox visually-hidden"/><span class="icon-checkbox"><svg class="form-icon-checkbox">
+                              <label for="checkbox" class="form-label-checkbox"><input type="checkbox" name="checkbox" id="checkbox" class="input-checkbox visually-hidden" /><span
+                                class="icon-checkbox"><svg class="form-icon-checkbox">
                                   <use href="./images/symbol-defs.svg#icon-form-check-box"></use>
                                 </svg></span>
-                              <label for="checkbox" class="form-label"><p class="text-zgoda">Соглашаюсь с рассылкой и принимаю <a href="" class="link-zgoda">Условия договора</a></p>
+                                <p class="text-zgoda">Соглашаюсь с рассылкой и принимаю <a href="" class="link-zgoda">Условия договора</a></p>
                               </label>
                              </div>
+                              <div class="button-form">
+                                <button type="submit" class="button-primary">Отправить</button>
+                              </div>
+                              </form>
                             
                             </div>
-                             
-                             <div class="button-form">
-                            <button type="submit" class="button-primary">Отправить</button></div>
-                          </form>
                         </div>
                       </div>
       <section class="section">
@@ -357,7 +358,7 @@
         </address></div>
 <div class="kontakt-social-right">
 
-<h3 class="kontakt-social-title">Присоединяйтесь</h3>
+<p class="kontakt-social-title">Присоединяйтесь</p>
 <ul class="kontakt-social-list">
   <li class="comanda-social-item">
     <a href="" class="button-social-kontakt">
@@ -379,21 +380,16 @@
       </svg></a></li>
 </ul>
 </div>
-<div class="subscription">
-  <h3 class="kontakt-social-title">Подпишитесь на рассылку</h3>
-                                                               <input type="email" name="email" id="user_email" class="subscription-input" placeholder="E-mail"  />
-                                </div>
-                              </label>
-
-
-
-                                                          <div class="button-subscription">
-                                                            <button type="submit" class="button-primary btn-subscription">Подписаться<svg class="subscription-icon">
-                                                              <use class=" " href="./images/symbol-defs.svg#icon-icon-send"></use>
-                                                            </svg></button>
-                                                          </div>
-                                                          </form>
-                                                          </div>
+<form class="subscription">
+   <p class="kontakt-social-title">Подпишитесь на рассылку</p><div class="block-subscription">
+     <input type="email" name="email" id="user_email" class="subscription-input" placeholder="E-mail"  />
+          
+            <button type="submit" class="button-primary btn-subscription">Подписаться<svg class="subscription-icon">
+              <use class=" " href="./images/symbol-defs.svg#icon-icon-send"></use>
+            </svg></button>
+        </div>
+                        </form>
+                        
 
 
 </div>
